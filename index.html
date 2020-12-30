@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Website</title>
 
- <link rel="stylesheet" href="all.css">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
  <link rel="stylesheet" href="Style.css">
 
 </head>
 <body>
-     <!-- ----------------------------  Navigation ---------------------------------------------- -->
+      <!------------------  Navigation -------------------->
 
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="#" class="text-gray">Blooger</a>
+                <a href="#" class="subtitle">Nature <span class="navbr"> Clicks</span></a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -25,33 +26,36 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Category</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Archive</a>
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Pages</a>
+                        <a href="#featured">Features</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Contact Us</a>
+                        <a href="#contact">Contact Us</a>
                     </li>
                 </ul>
-            </div>
+            </div> 
+
            <div class="social text-gray">
-                <a href="https://web.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://web.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </nav>
 
-    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
-<!-- header -->
+ <!------------------ End Navigation --------------------->
+
+ <!------------------  Hero Section ---------------------->
+
     <header class="header">
       <div class="banner">
         <p class="banner-subtitle">Over one hunred Clicks of Nature</p>
@@ -61,6 +65,42 @@
     </header>
     <div class="content-divider"></div>
 
+ <!------------------  End Hero Section --------------------->
+
+ <!------------------  About Section ------------------------>
+    <section class="section about" id="about">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">about <span class="subtitle">us</span></h2>
+      </div>
+      <!-- end of title  -->
+      <!-- about-center -->
+      <div class="section-center about-center">
+        <!-- about img wrapper-->
+        <div class="about-img">
+          <img
+            src="./images/about.jpg"
+            class="about-photo"
+            alt="awesome beach"
+          />
+        </div>
+        <!-- about info -->
+        <article class="about-info">
+          <h3>explore the Nature</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+            unde dolor?
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+            unde dolor?
+          </p>
+          <a href="#" class="btn-primary">read more</a>
+        </article>
+      </div>
+    </section>
+
+ <!------------------ End about Section --------------------->
 
 
 </body>
