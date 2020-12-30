@@ -401,3 +401,51 @@ a {
 
 
 /* --------------end About Overall  ---------------- */
+
+.gallery {
+  padding: 3rem;
+  background: #eedc82;
+}
+.gallery-img-container {
+  position: relative;
+  background: var(--primaryColor);
+}
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: #eedc82;
+  transition: var(--mainTransition);
+  opacity: 0;
+  cursor: pointer;
+}
+.gallery-img {
+  transition: var(--mainTransition);
+height:220px;
+width:80px;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+/* --------------end Gallery ---------------- */
+
