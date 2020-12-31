@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 
 .nav{
     background: white;
@@ -178,7 +177,7 @@ font-family: "Catamaran", sans-serif;
   padding: 1.2rem 1.5rem;
   animation: show 5s ease-in-out 1;
 }
-/* animation 
+ animation 
 @keyframes slideFromRight {
   0% {
     transform: translateX(1000px);
@@ -218,7 +217,7 @@ font-family: "Catamaran", sans-serif;
   }
 }
 
-*/
+
 
 /* content divider */
 .content-divider {
@@ -268,7 +267,7 @@ font-family: "Catamaran", sans-serif;
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 0.5rem solid #eedc82; 
+    / * border: 0.5rem solid #eedc82; */ 
     top: -1.5rem;
     left: -1.5rem;
     border-radius: var(--borderRadius);
@@ -448,4 +447,75 @@ width:80px;
 }
 
 /* --------------end Gallery ---------------- */
+
+.featured-tours {
+  background: var(--mainWhite);
+}
+.tour-card {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  margin-bottom: 4rem;
+}
+.tour-card:hover {
+  box-shadow: var(--darkShadow);
+}
+.tour-footer {
+  padding: 1.2rem 1.5rem;
+}
+.tour-title {
+  text-transform: capitalize;
+}
+.tour-country {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour-details p {
+  line-height: 0.2;
+  text-transform: capitalize;
+  color: var(--darkGrey);
+  letter-spacing: 0.02rem;
+}
+.tour-country {
+  align-self: center;
+  color: var(--primaryColor);
+}
+.tour-link {
+  text-align: center;
+}
+/* tour date */
+.tour-img-container {
+  position: relative;
+}
+.tour-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--primaryColor);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tour-card {
+    flex: 0 0 calc(33.3333% - 1rem);
+  }
+}
+
+
+
+/* --------------end Featured ---------------- */
 
